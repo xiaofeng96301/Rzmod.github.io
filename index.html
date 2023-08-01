@@ -9,31 +9,11 @@
 	<link href="cssyangs/index.css" rel="stylesheet"/>
 	<link href="cssyangs/indexpe.css" rel="stylesheet" media="screen and (max-width:800px)"/>
 	<script>
-		window.onload = function(){
-			document.querySelector("#ad1").onclick = function(){document.querySelector("#jianj").scrollIntoView(true);}
-			document.querySelector("#ad2").onclick = function(){document.querySelector("#guany").scrollIntoView(true);}
-			
-			document.querySelector("#us1").onclick = function(){document.querySelector("#jiaoc").scrollIntoView(true);}
-			document.querySelector("#us2").onclick = function(){document.querySelector("#ulsw").scrollIntoView(true);}
-			document.querySelector("#us3").onclick = function(){document.querySelector("#ulfg").scrollIntoView(true);}
-			document.querySelector("#us4").onclick = function(){document.querySelector("#uldw").scrollIntoView(true);}
-			document.querySelector("#us5").onclick = function(){document.querySelector("#ultq").scrollIntoView(true);}
-			document.querySelector("#us6").onclick = function(){document.querySelector("#ulcz").scrollIntoView(true);}
-			document.querySelector("#us7").onclick = function(){document.querySelector("#ulsw").scrollIntoView(true);}
-			document.querySelector("#us8").onclick = function(){document.querySelector("#ulfg").scrollIntoView(true);}
-			document.querySelector("#us9").onclick = function(){document.querySelector("#uldw").scrollIntoView(true);}
-			document.querySelector("#us10").onclick = function(){document.querySelector("#ultq").scrollIntoView(true);}
-			document.querySelector("#us11").onclick = function(){document.querySelector("#ulcz").scrollIntoView(true);}
-			document.querySelector("#us12").onclick = function(){document.querySelector("#uldw").scrollIntoView(true);}
-			document.querySelector("#us13").onclick = function(){document.querySelector("#ulsw").scrollIntoView(true);}
-			document.querySelector("#us14").onclick = function(){document.querySelector("#uldw").scrollIntoView(true);}
-			document.querySelector("#us15").onclick = function(){document.querySelector("#uldw").scrollIntoView(true);}
-			document.querySelector("#us16").onclick = function(){document.querySelector("#ulcz").scrollIntoView(true);}
-			document.querySelector("#us18").onclick = function(){document.querySelector("#tops").scrollIntoView(true);}
-			document.querySelector("#us19").onclick = function(){document.querySelector("#tops").scrollIntoView(true);}
-			document.querySelector("#us20").onclick = function(){document.querySelector("#ultq").scrollIntoView(true);}
-			
-	}
+		
+		function gundong(ids){
+			document.querySelector("#"+ids).scrollIntoView(true);
+		}
+		
 	</script>
 	<title>人战-拟争官方网站</title>
   </head>
@@ -41,32 +21,32 @@
 	  <div id="tops" style="padding: 0px; margin: 0px;"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid">
-    <a class="navbar-brand" id="us19">人战</a>
+    <a class="navbar-brand" onclick="gundong('tops')">人战</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" id="ad1">简介</a>
+        <a class="nav-link active" aria-current="page" onclick="gundong('jianj')">简介</a>
       </li>
       
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#jiaoc" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           教程
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="position: absolute;" >
-          <li><button class="dropdown-item" id="us1">初始开局</button></li>
-          <li><a class="dropdown-item" id="us2">食物系统</a></li>
-		  <li><a class="dropdown-item" id="us3">人类分工</a></li>
-		  <li><a class="dropdown-item" id="us4">单位乘载</a></li>
+          <li><button class="dropdown-item" onclick="gundong('jiaoc')">初始开局</button></li>
+          <li><a class="dropdown-item" onclick="gundong('ulsw')">食物系统</a></li>
+		  <li><a class="dropdown-item" onclick="gundong('ulfg')">人类分工</a></li>
+		  <li><a class="dropdown-item" onclick="gundong('uldw')">单位乘载</a></li>
           <li><hr class="dropdown-divider"></li>
 		  
-		  <li><a class="dropdown-item" id="us5">天气天灾与四季分化</a></li>
-		  <li><a class="dropdown-item" id="us6">虫族支线与核支线</a></li>
+		  <li><a class="dropdown-item" onclick="gundong('ultq')">天气天灾与四季分化</a></li>
+		  <li><a class="dropdown-item" onclick="gundong('ulcz')">虫族支线与核支线</a></li>
         </ul>
       </li>
-	  <li class="nav-item"><a class="nav-link" id="ad2">关于</a></li>
+	  <li class="nav-item"><a class="nav-link" onclick="gundong('guany')">关于</a></li>
       <li class="nav-item" style="display: none;">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">下载</a>
       </li>
@@ -129,16 +109,16 @@
 				</p><p>
 				可以建造些帐篷加快人类的生产，食物消耗数量和人数相关，指挥部内的人类不会消耗食物资源
 				</p><p>
-				制造避雷针可以避雷，具体可以到：<a style="font-weight: bold; color: #000;text-decoration:none" id="us5">雷雨</a>
+				制造避雷针可以避雷，具体可以到：<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ultq')">雷雨</a>
 				</p><p>
 				在外面放置一些单独的墙可以大概率阻挡龙卷风的侵略
 			</p>
 			<ul>
-				<li><a style="font-weight: bold; color: #000;text-decoration:none" id="us7">食物的制造和搬运</a></li>
-				<li><a style="font-weight: bold; color: #000;text-decoration:none" id="us8">人类的区别和方向</a></li>
-				<li><a style="font-weight: bold; color: #000;text-decoration:none" id="us9">单位的限制与升级</a></li>
-				<li><a style="font-weight: bold; color: #000;text-decoration:none" id="us10">天气天灾四季变化</a></li>
-				<li><a style="font-weight: bold; color: #000;text-decoration:none" id="us11">虫族支线与核支线</a></li>
+				<li><a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ulsw')">食物的制造和搬运</a></li>
+				<li><a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ulfg')">人类的区别和方向</a></li>
+				<li><a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('uldw')">单位的限制与升级</a></li>
+				<li><a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ultq')">天气天灾四季变化</a></li>
+				<li><a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ulcz')">虫族支线与核支线</a></li>
 			</ul>
 			
 			<hr />
@@ -149,7 +129,7 @@
 			<img src="images/nus3.jpg" style=" float: right; width: 21%; margin:1%; border-radius: 0.1875rem;"/>
 			<p>
 				<p>农民职业的人类可以在地面上种小麦或者果木，食物为0的情况下人类会罢工，具体请移动到
-				<a style="font-weight: bold; color: #000;text-decoration:none" id="us12">单位承载</a>
+				<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('uldw')">单位承载</a>
 				<br />
 				在对村民没有动作的情况下可以自动回收附近的成熟作物或者浆果石头放进最近的粮仓，
 				<br />
@@ -159,7 +139,7 @@
 				<br />
 				蟹笼产生的食物很缓慢，但是可以密集堆叠提高产量，捕鱼船会直接打捞产出，不需要经过粮仓来储存
 				<br />
-				火堆可以在冬天的时候保持作物不会死亡，具体可以转到<a id="us20" style="font-weight: bold; color: #000;text-decoration:none" >天气天灾</a>
+				火堆可以在冬天的时候保持作物不会死亡，具体可以转到<a onclick="gundong('ultq')" style="font-weight: bold; color: #000;text-decoration:none" >天气天灾</a>
 				</p>
 				
 			</p>
@@ -175,7 +155,7 @@
 					<li>飞行：可以在陆地和暂时性非陆地的地块飞行，可以建造空军基地</li>
 					<li>游泳：可以在水面上游泳，暂时性的潜到水下，可以建造海军基地</li>
 					<li>智慧：建造更高阶的建筑，可以建造实验工厂和机甲工厂</li>
-					<li>农民：在<a style="font-weight: bold; color: #000;text-decoration:none" id="us13">食物系统</a>中对农民有细致的解释</li>
+					<li>农民：在<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ulsw')">食物系统</a>中对农民有细致的解释</li>
 					<li style="font-size: 1.25rem;">战斗类</li>
 					<li>步枪：可对空对地，可以冲锋加速，攻击速度中等，可以存六个地雷，地雷可以放置，每个地雷在步兵死亡时都会增加爆炸伤害</li>
 					<li>冲锋：攻击速度快，有弹夹限制，移动速度也很快，没有特殊的技能</li>
@@ -202,7 +182,7 @@
 					<li>麻痹：麻痹效果会组织单位移动和单位制造交互，除一些特殊单位可以不受交互影响其他基本无法出发交互动作</li>
 					<li>剧毒：对单位造成百分比伤害，积累毒素+被攻击血量百分比，此伤害破盾，无法被清除的负面效果</li>
 					<li>地表辐射：单位经过里面的人类会受到一级的感染，感染的人类死后会生成地表辐射，单位会变成中立</li>
-					<li>其他辐射：详情转到<a style="font-weight: bold; color: #000;text-decoration:none"id="us16">虫族支线与核支线</a></li>
+					<li>其他辐射：详情转到<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('ulcz')">虫族支线与核支线</a></li>
 				</ul>
 			</p>
 			<hr />
@@ -212,7 +192,7 @@
 				<ul>
 					<li>下雨：会让坦克减速，重量越重陷得越深，让庄稼长得更快</li>
 					<li>干旱：庄稼生长更缓慢</li>
-					<li>雷阵雨：和下雨无异，在地图上无规则打雷，落下的雷会对附近单位建筑造成大量伤害和<a style="font-weight: bold; color: #000;text-decoration:none" id="us14">麻痹</a>避雷针可以吸引闪电免受其他单位遭受伤害</li>
+					<li>雷阵雨：和下雨无异，在地图上无规则打雷，落下的雷会对附近单位建筑造成大量伤害和<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('uldw')">麻痹</a>避雷针可以吸引闪电免受其他单位遭受伤害</li>
 					<li>大风天：对顺风单位加速，逆着风走的单位会有减速</li>
 					<li>大雾天：所有的单位视野降到统一为6，雾天结束会还原</li>
 				</ul>
@@ -224,7 +204,7 @@
 				</ul>
 				<ul>
 					<li>龙卷风：龙卷风会带走沿途中所有的单位，可能会被建筑吸引，在海面上会卷起海鲜到岸边</li>
-					<li>陨石：砸落到地面上造成巨量伤害，附近会出现地表辐射，具体辐射详情<a style="font-weight: bold; color: #000;text-decoration:none" id="us15">单位承载与效果</a>，回收陨石会获得石头ps：除了人类都能回收</li>
+					<li>陨石：砸落到地面上造成巨量伤害，附近会出现地表辐射，具体辐射详情<a style="font-weight: bold; color: #000;text-decoration:none" onclick="gundong('uldw')">单位承载与效果</a>，回收陨石会获得石头ps：除了人类都能回收</li>
 				</ul>
 			</p>
 			
@@ -270,7 +250,7 @@
 				
 				</p>
 				<span style=" padding: 0px; margin: 0px;">
-					<button style="font-weight: bold; color: #000;text-decoration:none;height: 30px;width: 100%; font-size: 0.7rem; background-color: #e5f3f3; border: #eaf8f8;"  id="us18" >
+					<button style="font-weight: bold; color: #000;text-decoration:none;height: 30px;width: 100%; font-size: 0.7rem; background-color: #e5f3f3; border: #eaf8f8;"  onclick="gundong('tops')" >
 					返回顶部
 					</button> 
 					<br />
