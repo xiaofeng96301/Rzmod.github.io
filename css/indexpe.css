@@ -1,0 +1,111 @@
+.navbar{
+	width: 100%;
+	}
+
+#xiangqfalse {
+	width: 5%;
+}
+
+#banben,
+#banben1,
+#banben2,
+#banben3,
+#banben4 {
+	width: 5%;
+}
+
+#xqnr {
+	margin-left: 6%;
+}
+
+
+.icon {
+	width: 60px;
+	margin-left: -30px;
+}
+
+.navbar {
+	height: 80px;
+}
+
+.navbar-multi {
+	margin-top: 80px;
+}
+.navbar ul li {
+	line-height: 80px;
+	width: 150px;
+	font-size: 45px;
+}
+.ulnavbar-multi {
+	height: 50px;
+}
+.navbar:hover~.navbar-multi,
+.navbar-multi:hover {
+	height: 300px;
+}
+.linavbarmulti {
+	line-height: 50px;
+	height: 50px;
+	width: 150px;
+	font-size: 35px;
+}
+
+.bar {
+	background: url(../images/jdn.jpg) rgba(0, 0, 0, .5);
+	width: 100%;
+	background-size: 100%;
+	border-bottom: 5px solid #e1ffff;
+}
+
+
+
+.jianj {
+	width: 70%;
+	}
+.jianj p{
+	font-size: 35px;
+	padding-left: 2%;
+}
+.jianj h1{
+	line-height: 70px;
+	font-size: 60px;
+	padding-left: 2%;
+}
+.fenl {
+	width: 30%;
+}
+.fenl button li{
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+	}
+.fenl button{
+	width: 100%;
+	height: 60px;
+	font-size: 40px;
+}
+.fenl h3{
+	line-height: 60px;
+	font-size: 50px;
+}
+#neimg{
+	width: 50%;
+	margin: 2%;
+	border-radius: 0.625rem;
+	display: none;
+}
+
+
+
+#xqnr h1 {
+	line-height: 100px;
+	font-size: 70px;
+	}
+#xqnr p {
+	font-size: 30px;
+}
+#xqimages {
+	width: 31%;
+	float: right;
+	margin: 1%;
+}
